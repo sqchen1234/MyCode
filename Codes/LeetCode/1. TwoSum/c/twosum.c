@@ -69,7 +69,7 @@ int main()
     int *nums, *result, *target, *resultsize;
     target = malloc(sizeof(int));
     resultsize = malloc(sizeof(int)); 
-    int numSize = 100000;
+    int numSize = 10000;
     nums = randomNums(numSize, target);
 
     //resultsize = 2;
