@@ -76,7 +76,6 @@ int main()
     printf("the size of num[] is %d\n", numSize);
     printf("the target number is %d\n", *target);
 
-
 // calculate the result
     result = twoSum(nums, numSize, target, resultsize);
 // print out the result

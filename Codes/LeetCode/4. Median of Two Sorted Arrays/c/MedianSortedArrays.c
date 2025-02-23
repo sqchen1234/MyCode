@@ -45,7 +45,28 @@ int *randomNums(int randNumsSize)
 
 double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Size) {
     double result;
-    
+
+    int k = (nums1Size + nums2Size + 1) / 2;
+    int cutstart1 = 0, cutstart2 = 0;
+    int cutend1 = 0, cutend2 = 0;
+
+    while (k>1)
+    {
+        cutend1 += k/2;
+        cutend2 += k/2;
+
+        //throw away kth smallest numbers. 
+        if (nums1[cutend1] > nums2[cutend2])
+        {
+            cutstart2 = cutend2 + 1;
+        }else{
+            cutstart1 = cutend1 + 1;
+        }
+        k /= 2;
+    }
+
+    result = (nums1[cutstart1] + nums2[cutstart2]) /2;
+
     return result;
 }
 
