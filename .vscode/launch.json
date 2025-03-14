@@ -2,14 +2,21 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Application",
+      "request": "launch",
+      "mainClass": "com.example.spring_boot.Application",
+      "projectName": "spring-boot"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "/home/sqchen/MyCode/Codes/Spring/spring-boot/src",
+      "program": "/home/sqchen/MyCode/Codes/Spring/spring-boot/src/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
