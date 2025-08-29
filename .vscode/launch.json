@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "test",
+      "request": "launch",
+      "mainClass": "test",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "Application",
       "request": "launch",
       "mainClass": "com.example.spring_boot.Application",
